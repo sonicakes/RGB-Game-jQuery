@@ -1,0 +1,43 @@
+/* background is gradient of 11 shades of grey! 50 would be too much typing lol */
+body{
+    background: linear-gradient(35deg,#808080, #737373, #666666,#595959, #4c4c4c,#404040,#333333, #262626, #191919,#0c0c0c,#000000);
+	animation: Gradient 15s ease infinite;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	background-size: 400% 400%;
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
