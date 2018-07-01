@@ -18,6 +18,12 @@ At first I coded the game in vanilla JS,  based on requirements from Colt Steele
 - Jquery
 - CSS Flexbox
 
+## Cool Stuff
+
+- background of the body does 50 shades of grey...no, only 11 really. but they are shades of grey
+- gradient on h1 representing RGB
+- background changes depending on chosen colour
+
 ### What's next?
 
 - make the game play any number of squares
