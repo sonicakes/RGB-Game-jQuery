@@ -46,27 +46,44 @@ body.shades{
 		background-position: 0% 50%
 	}
 }
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
 h1{
 	background-image: linear-gradient(to right, red, green, blue);
 	font-family: 'Monoton', cursive;
 	color:transparent;
 	text-transform: uppercase;
     font-weight:800;
-    font-size: 3rem;
+    font-size: 4rem;
 	letter-spacing: 3px;
 	-webkit-background-clip: text;
 	text-align:center;
 }
 .container{
-	background-color: white;
-	border: 1px solid blue;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width:300px;
-	height: 300px;
+	min-width:300px;
+	min-height: 300px;
 	margin: 0 auto;
 	margin-top:10%;
+	
 
 }
 h3{
@@ -75,11 +92,17 @@ h3{
 }
 .box{
 	background-color: hotpink;
-	width:100px;
-	height: 100px;
-	border: 1px solid red;
-margin: 5px;
-	
+	width:10rem;
+	height: 10rem;
+border-radius: 15px;
+text-align:center;
+margin: 10px;
+box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+
+}
+.box:hover{
+	cursor: pointer;
+	animation: bounce 1s;
 }
 .greeny{
 	background-color: green;
@@ -101,6 +124,16 @@ margin: 5px;
 }
 .btn{
 	width: 150px;
-	text-align: center;
-	margin:0 auto;
+color:white;
+margin: 0 auto;
+	text-align:center;
+	border: 1px white solid;
+	padding:10px;
+	border-radius: 10px;
+
+}
+.btn:hover{
+	background-color: black;
+	color:white;
+	cursor:pointer;
 }
